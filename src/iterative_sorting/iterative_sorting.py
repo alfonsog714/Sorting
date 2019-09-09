@@ -14,17 +14,17 @@ def selection_sort( arr ):
         #b. Swap the element at current index with the smallest element found in above loop
         # TO-DO: swap
         if smallest_index != i:
-            arr[i], arr[smallest_index] = arr[smallest_index], arr[i]
+            arr[i], arr[smallest_index] = arr[smallest_index], arr[i] # python array swap syntax
 
     return arr
 
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
-    for i in range (0, len(arr) - 1):
-        for j in range(0, len(arr) - 1 - i):
-            if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
+    for i in range (0, len(arr) - 1): # same setup as selection sort
+        for j in range(0, len(arr) - 1 - i): #apparently using i and j as variables for nested loops is conventional
+            if arr[j] > arr[j+1]: # j+1 grabs the element to the right of j
+                arr[j], arr[j+1] = arr[j+1], arr[j] # swap the values
     return arr
 
 
