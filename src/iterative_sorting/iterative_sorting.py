@@ -44,13 +44,16 @@ for i in range(0, len(a) - 1):
     You cut off the last number by making it the length of the array - 1. Before this, I thought the i was the value in the array
     """
     minIndex = i
-    # print(i)
+    print(f"This is minIndex before entering the second loop: {minIndex}")
+    print(f"This is I, AKA the current index in the loop: {i}")
     for j in range(i + 1, len(a)):
-        print(f"This is I, AKA the current index in the loop: {i}")
         """
         Tried using range(a[i:]), didn't work.
         """
-        print(f"This is J, AKA the current number(?) in the numbers to the right of I: {j}")
+        print(f"This is J, AKA the index of the next number in the array to the right of I: {j}")
+        if a[j] < a[minIndex]:
+            minIndex = j
+            print(f"This is minIndex after running through the if clause: {minIndex}")
 
 # random.shuffle(a)
 # # i = 1
