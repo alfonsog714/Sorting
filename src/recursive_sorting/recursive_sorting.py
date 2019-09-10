@@ -22,11 +22,12 @@ def merge( arrA, arrB ):
 
     return merged_arr
 
-print(merge(a, b))
+# print(merge(a, b))
 # print(a + b)
+
 # TO-DO: implement the Merge Sort function below USING RECURSION
 def merge_sort( arr ):
-    # TO-DO
+    #split the array (?)
 
     return arr
 
