@@ -1,8 +1,14 @@
-# TO-DO: complete the helpe function below to merge 2 sorted arrays
+# TO-DO: complete the helper function below to merge 2 sorted arrays
+
+#Example arrays: 
+#A - [5, 2, 4, 6, 1]
+#B - [1, 9, 7, 8, 0]
+
 def merge( arrA, arrB ):
     elements = len( arrA ) + len( arrB )
     merged_arr = [0] * elements
     # TO-DO
+
     
     return merged_arr
 
