@@ -25,7 +25,7 @@ def bubble_sort( arr ):
         for j in range(0, len(arr) - 1 - i): #apparently using i and j as variables for nested loops is conventional
             if arr[j] > arr[j+1]: # j+1 grabs the element to the right of j
                 arr[j], arr[j+1] = arr[j+1], arr[j] # swap the values
-    return arr
+    return arr # refer back to lecture video and make sure to understand why using the while loop is superior to this method
 
 
 # STRETCH: implement the Count Sort function below
